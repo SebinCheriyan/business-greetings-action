@@ -10,4 +10,7 @@ outputs:
     description: 'Time of greeting'
 runs:
   using: 'composite'
-  main: 'main.py'
+  steps:
+    - run: |
+        python main.py
+      shell: bash
