@@ -14,3 +14,5 @@ runs:
     - run: |
         python ${{ github.action_path }}/main.py
       shell: bash
+      env:
+        INPUT_NAME: ${{ inputs.name }}
